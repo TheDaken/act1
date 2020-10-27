@@ -1,53 +1,92 @@
 
 *{
-    padding: 0;
+    padding:0.2%;
     margin: 0; 
     box-sizing: border-box;
 }
 body{
+  
     height: 100%;
     width: 100%;
 }
-p{
-    padding: 10px;
-    text-align: center;
-}
-.img1{
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-main{
-    
+.item2 { grid-area: right;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 40%;
+    height: 0%;}
 
-}
+
+.item4 { grid-area: main;
+    position: relative;
+    width: 25%;
+    height: 0%;
+ }
+
 nav{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    grid-area: header;
+    display: inline-block;
     border: groove red 2px ;
     width: 100%;
-    background-color: grey;
-    padding: 10px;
+    height: 100%;
+    background-color: rgb(207, 4, 4);
+    text-align: center;
 }
 .menu{
     text-align: center;
     border: solid 2px;
     margin-left: 60px;
 }
-h1{
+.img1{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+main{
+   
+    
+}
+h1.nombre{
+    grid-area: nombre;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
 p{
     text-align: center;
-    padding-right: 40px;
-    padding-left: 40px;
 }
 footer{
+    grid-area: footer;
     text-align: center;
     padding: 3px;
     background-color: DarkSalmon;
     color: white;
+}
+.der{
+    grid-area: dere;
+    position: relative;
+    margin-right: 20%;
+    margin-top: 10%;
+    width: 25%;
+    height: 0%;
+}
+.img3{
+    display: block; 
+    size: 50% 50%;
+    
+}
+.grid-con {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'nombre nombre nombre nombre nombre nombre'
+      'menu main main  right dere maint'
+      'menu footer footer footer footer footer';
+}
+.grid-con > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
 }

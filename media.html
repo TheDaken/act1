@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,25 @@
     <nav>
         <a class="menu" href="index.html">index</a>
         <a class="menu" href="biografia.html">Biografia</a>
-        <a class="menu" href="media.html">Media</a>
+        <a class="menu" href="media.html">Formulario</a>
     </nav>
     <main>
         <div>
+            <form action="ejemplo.php" method="get">
+                <p>Nombre: <input type="text" name="nombre" size="40"></p>
+                <p>Año de nacimiento: <input type="number" name="nacido" min="1950"></p>
+                <p>Sexo:
+                  <input type="radio" name="hm" value="h"> Hombre
+                  <input type="radio" name="hm" value="m"> Mujer
+                </p>
+                <p>
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Borrar">
+                </p>
+              </form>
 
         </div>
     </main>
-    <footer></footer>    
+    <footer>Actividad Deportista con CSS</footer>    
 </body>
 </html>
