@@ -8,38 +8,29 @@ main{
     
 
 }
-header{
+nav{
     display: grid;
     grid-template-columns: auto auto auto;
-    
-    border: 2px dotted blue;
+    border: groove red 2px ;
     width: 100%;
     background-color: grey;
     padding: 10px;
 }
-ul{
-    list-style-type: none;
-    
+.menu{
+    text-align: center;
+    border: solid 2px;
+    margin-left: 60px;
 }
-li{
-    
-    display: inline-block;
-    background-color: rgb(94, 93, 93);
-    padding: 3px 3px 3px 3px;
-    
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
-.in{
-    grid-column: 1/2;
+p{
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
 }
-.bi{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.me{
-    grid-column-start: 3;
+footer{
     
-}
-h3{
-    
-    color: rgba(255, 235, 205, 0.822);
 }
